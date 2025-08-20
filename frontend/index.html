@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto ML | Automated Data Science Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-2.16.1.min.js"></script>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+ <nav id="site-navbar" class="bg-white/90 backdrop-blur shadow-sm fixed w-full z-50 top-0">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between h-16">
+      <div class="flex items-center">
+        <img src="https://placehold.co/40x40/7B68EE/ffffff?text=ML" alt="Auto ML" class="h-8 w-8 rounded-full shadow">
+        <span class="ml-2 text-2xl font-extrabold text-gray-900">Auto ML</span>
+      </div>
+      <div class="flex items-center">
+        <button id="menu-toggle" class="p-2 rounded-lg text-gray-700 hover:bg-gray-100 focus:outline-none" aria-label="Open menu" aria-expanded="false" aria-controls="menu-dropdown">
+          <i class="fas fa-bars text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div id="menu-dropdown" class="hidden absolute right-4 top-16 bg-white shadow-lg rounded-xl w-56 border border-gray-200">
+    <ul class="py-2 text-gray-700">
+      <li><a href="#action-buttons" data-target="action-buttons" class="block px-4 py-2 hover:bg-gray-50">Explore Features</a></li>
+      <li><a href="#about-us" data-target="about-us" class="block px-4 py-2 hover:bg-gray-50">About Us</a></li>
+      <li><a href="#contact-us" data-target="contact-us" class="block px-4 py-2 hover:bg-gray-50">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+ <section id="hero-section" class="h-screen flex items-center justify-center overflow-hidden text-white pt-16">
+    <div class="absolute inset-0 opacity-20">
+        <svg class="w-full h-full" viewBox="0 0 1440 800" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0H1440V800H0V0Z" fill="url(#paint0_linear_1_2)"/><defs><linearGradient id="paint0_linear_1_2" x1="720" y1="0" x2="720" y2="800" gradientUnits="userSpaceOnUse"><stop stop-color="var(--color-indigo)"/><stop offset="1" stop-color="var(--color-rebecca-purple)"/></linearGradient></defs><circle cx="100" cy="100" r="80" fill="white" opacity="0.1"/><circle cx="1300" cy="700" r="120" fill="white" opacity="0.1"/><circle cx="720" cy="400" r="200" fill="white" opacity="0.05"/><path d="M0 400C200 200 500 100 720 200C940 300 1240 200 1440 400V800H0V400Z" fill="white" opacity="0.03"/></svg>
+    </div>
+    <div class="relative z-10 text-center">
+        <div class="relative w-48 h-48 mx-auto mb-8 flex items-center justify-center">
+            <img src="https://placehold.co/120x120/ffffff/7B68EE?text=ML" alt="Auto ML Logo" class="w-32 h-32 rounded-full shadow-2xl border-4 border-white">
+            <div class="absolute -top-6 -left-8 animated-icon"><i class="fas fa-chart-line text-4xl text-white opacity-70"></i></div>
+            <div class="absolute -top-10 -right-6 animated-icon" style="animation-delay:0.4s;"><i class="fas fa-robot text-4xl text-white opacity-70"></i></div>
+            <div class="absolute bottom-[-25px] left-4 animated-icon" style="animation-delay:0.8s;"><i class="fas fa-database text-4xl text-white opacity-70"></i></div>
+            <div class="absolute bottom-[-30px] right-2 animated-icon" style="animation-delay:1.2s;"><i class="fas fa-brain text-4xl text-white opacity-70"></i></div>
+            <div class="absolute top-1/2 -left-10 animated-icon" style="animation-delay:1.6s;"><i class="fas fa-cogs text-4xl text-white opacity-70"></i></div>
+            <div class="absolute top-12 -right-12 animated-icon" style="animation-delay:2s;"><i class="fas fa-magic text-4xl text-white opacity-70"></i></div>
+        </div>
+        <p class="hero-subtitle">Just bring your data and let our machine learning platform do the hard work for you</p>
+        <a href="#action-buttons" class="btn-secondary inline-flex items-center group">Get started <i class="fas fa-arrow-down ml-2 group-hover:translate-y-1 transition-transform"></i></a>
+    </div>
+</section>
+
+<div id="main-content-container" class="max-w-4xl mx-auto px-4 py-16">
+  <section id="action-buttons" class="space-y-6">
+    <div class="relative">
+      <button onclick="toggleExpand('upload-content', this)" class="action-btn card-modern-custom text-center flex flex-col items-center justify-center p-6 text-white w-full">
+        <i class="fas fa-upload text-4xl mb-4"></i><span class="text-xl font-semibold">Upload Your File</span><p class="text-sm opacity-90 mt-2">CSV, Excel, JSON. Get instant ML insights.</p>
+      </button>
+      <div id="upload-content" class="expand-content hidden">
+          <div class="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center mb-6 cursor-pointer hover:bg-gray-50 file-drop-area" data-input-id="file-upload-input" data-label-id="file-upload-label">
+            <input type="file" class="hidden" id="file-upload-input" accept=".csv,.xlsx,.xls,.json">
+            <i class="fas fa-cloud-upload-alt text-4xl text-gray-400 mb-4"></i>
+            <h3 class="text-lg font-semibold text-gray-700">Drag & Drop or <span class="text-purple-600">Browse Files</span></h3>
+            <p class="text-sm text-gray-500 mt-1" id="file-upload-label">Supported formats: CSV, Excel, JSON</p>
+          </div>
+          <div class="space-y-6">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                  <label class="form-label">Problem Type</label>
+                  <div id="upload-problem-type" class="custom-select-wrapper" data-value="Classification">
+                      <div class="custom-select-trigger">Classification</div>
+                      <div class="custom-select-options">
+                          <div class="custom-select-option selected" data-value="Classification">Classification</div>
+                          <div class="custom-select-option" data-value="Regression">Regression</div>
+                      </div>
+                  </div>
+                </div>
+                <div>
+                  <label for="upload-target-column" class="form-label">Target Column</label>
+                  <input type="text" id="upload-target-column" placeholder="e.g., 'species'" class="form-input">
+                </div>
+              </div>
+              <div>
+                <label class="form-label">Machine Learning Model</label>
+                <div id="upload-model-name" class="custom-select-wrapper" data-value="Random Forest">
+                    <div class="custom-select-trigger">Random Forest</div>
+                    <div class="custom-select-options">
+                        </div>
+                </div>
+              </div>
+              <div class="flex justify-end pt-2">
+                <button id="upload-start-analysis-btn" class="btn-primary">Analyze Uploaded File</button>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="relative">
+      <button onclick="toggleExpand('manual-content', this)" class="action-btn card-modern-custom text-center flex flex-col items-center justify-center p-6 text-white w-full">
+        <i class="fas fa-link text-4xl mb-4"></i><span class="text-xl font-semibold">Enter Data Link (Manual Model)</span><p class="text-sm opacity-90 mt-2">Connect to GitHub, Kaggle, or any URL.</p>
+      </button>
+      <div id="manual-content" class="expand-content hidden">
+        <div class="space-y-6">
+            <div>
+              <label for="manual-url" class="form-label">Dataset URL</label>
+              <input type="url" id="manual-url" placeholder="https://example.com/data.csv" class="form-input">
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label class="form-label">Problem Type</label>
+                <div id="manual-problem-type" class="custom-select-wrapper" data-value="Classification">
+                    <div class="custom-select-trigger">Classification</div>
+                    <div class="custom-select-options">
+                        <div class="custom-select-option selected" data-value="Classification">Classification</div>
+                        <div class="custom-select-option" data-value="Regression">Regression</div>
+                    </div>
+                </div>
+              </div>
+              <div>
+                <label for="manual-target-column" class="form-label">Target Column</label>
+                <input type="text" id="manual-target-column" placeholder="e.g., 'target_variable'" class="form-input">
+              </div>
+            </div>
+            <div>
+                <label class="form-label">Machine Learning Model</label>
+                <div id="manual-model-name" class="custom-select-wrapper" data-value="Random Forest">
+                    <div class="custom-select-trigger">Random Forest</div>
+                    <div class="custom-select-options">
+                        </div>
+                </div>
+            </div>
+            <div class="flex justify-end pt-2">
+              <button id="manual-start-analysis-btn" class="btn-primary">Analyze from URL</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+      <button onclick="toggleExpand('automl-content', this)" class="action-btn card-modern-custom text-center flex flex-col items-center justify-center p-6 text-white w-full">
+        <i class="fas fa-magic text-4xl mb-4"></i><span class="text-xl font-semibold">AutoML & Model Comparison</span><p class="text-sm opacity-90 mt-2">Let AI find the best models for you.</p>
+      </button>
+      <div id="automl-content" class="expand-content hidden">
+        <div class="space-y-6">
+            <div>
+              <label for="automl-url" class="form-label">Dataset URL</label>
+              <input type="url" id="automl-url" placeholder="https://example.com/data.csv" class="form-input">
+            </div>
+            <div>
+              <label for="automl-target-column" class="form-label">Target Column</label>
+              <input type="text" id="automl-target-column" placeholder="target_variable" class="form-input">
+            </div>
+            <div class="flex justify-end pt-2">
+              <button id="automl-start-analysis-btn" class="btn-primary">Run AutoML Comparison</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="relative">
+        <button onclick="toggleExpand('image-content', this)" class="action-btn card-modern-custom text-center flex flex-col items-center justify-center p-6 text-white w-full">
+            <i class="fas fa-camera-retro text-4xl mb-4"></i>
+            <span class="text-xl font-semibold">Image Classification with CNN</span>
+            <p class="text-sm opacity-90 mt-2">Train a neural network on your images.</p>
+        </button>
+        <div id="image-content" class="expand-content hidden">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4 border-b pb-2">Step 1: Train Your Model</h3>
+            <p class="text-sm text-gray-600 mb-4">Upload a <code class="bg-gray-200 p-1 rounded">.zip</code> file containing your image dataset. The zip file should have one sub-directory for each image class.</p>
+            <div class="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center mb-6 cursor-pointer hover:bg-gray-50 file-drop-area" data-input-id="image-zip-input" data-label-id="image-zip-label">
+                <input type="file" id="image-zip-input" class="hidden" accept=".zip">
+                <i class="fas fa-file-archive text-4xl text-gray-400 mb-4"></i>
+                <h3 class="text-lg font-semibold text-gray-700">Drag & Drop or <span class="text-purple-600">Browse ZIP File</span></h3>
+                <p class="text-sm text-gray-500 mt-1" id="image-zip-label">No file selected</p>
+            </div>
+            <div class="flex justify-end">
+                <button id="image-train-btn" class="btn-primary w-full md:w-auto">Upload and Train Model</button>
+            </div>
+            <div id="image-training-status" class="mt-4 text-center font-medium hidden"></div>
+
+            <div class="my-6 border-t border-gray-200"></div>
+            <div id="image-prediction-section" class="opacity-50 pointer-events-none">
+                <h3 class="text-lg font-semibold text-gray-800 mb-4 border-b pb-2">Step 2: Predict an Image</h3>
+                <p class="text-sm text-gray-600 mb-4">Once your model is trained, upload a single image to see the prediction.</p>
+                 <div class="border-2 border-dashed border-gray-300 rounded-xl p-8 text-center mb-6 cursor-pointer hover:bg-gray-50 file-drop-area" data-input-id="image-predict-input" data-label-id="image-predict-label">
+                    <input type="file" id="image-predict-input" class="hidden" accept="image/*">
+                    <i class="fas fa-image text-4xl text-gray-400 mb-4"></i>
+                    <h3 class="text-lg font-semibold text-gray-700">Drag & Drop or <span class="text-purple-600">Browse Image</span></h3>
+                    <p class="text-sm text-gray-500 mt-1" id="image-predict-label">No file selected</p>
+                </div>
+                <div class="flex justify-end">
+                    <button id="image-predict-btn" class="btn-secondary w-full md:w-auto">Predict</button>
+                </div>
+                <div id="image-prediction-result" class="mt-4 text-center font-medium hidden"></div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <div id="dynamic-content-area" class="mt-12"></div>
+</div>
+
+<section id="about-us" class="bg-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12"><h2 class="text-4xl font-extrabold text-gray-900 mb-4">About Auto ML</h2><p class="text-lg text-gray-600 max-w-3xl mx-auto">At Auto ML, we believe in democratizing data science. Our mission is to empower businesses and individuals to leverage the full potential of machine learning without needing deep expertise.</p></div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div class="p-6 rounded-lg shadow-md bg-gray-50"><i class="fas fa-lightbulb text-5xl text-medium-slateblue mb-4"></i><h3 class="text-xl font-semibold text-gray-900 mb-2">Innovation</h3><p class="text-gray-600">We constantly push the boundaries of AI to bring you cutting-edge solutions.</p></div>
+            <div class="p-6 rounded-lg shadow-md bg-gray-50"><i class="fas fa-users text-5xl text-medium-slateblue mb-4"></i><h3 class="text-xl font-semibold text-gray-900 mb-2">Accessibility</h3><p class="text-gray-600">Making complex ML accessible to everyone, regardless of their technical background.</p></div>
+            <div class="p-6 rounded-lg shadow-md bg-gray-50"><i class="fas fa-shield-alt text-5xl text-medium-slateblue mb-4"></i><h3 class="text-xl font-semibold text-gray-900 mb-2">Reliability</h3><p class="text-gray-600">Ensuring robust and trustworthy models for your critical decisions.</p></div>
+        </div>
+    </div>
+</section>
+
+<section id="contact-us" class="max-w-4xl mx-auto my-16 p-6 bg-white rounded-3xl shadow-lg border border-gray-100">
+  <div class="text-center mb-8"><h2 class="text-3xl font-bold text-gray-900">Contact Us</h2><div class="w-24 h-1 bg-gradient-to-r from-purple-500 to-indigo-600 mx-auto mt-4 rounded-full"></div></div>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="space-y-6">
+      <div class="flex items-start"><div class="bg-purple-100 p-3 rounded-full mr-4"><i class="fas fa-envelope text-purple-600 text-xl"></i></div><div><h3 class="text-lg font-semibold text-gray-800">Email</h3><p class="text-gray-600">AutoML.V00.01.01@gmail.com</p></div></div>
+      <div class="flex items-start"><div class="bg-purple-100 p-3 rounded-full mr-4"><i class="fas fa-phone text-purple-600 text-xl"></i></div><div><h3 class="text-lg font-semibold text-gray-800">Phone</h3><p class="text-gray-600">+201288950981</p></div></div>
+      <div class="flex items-start"><div class="bg-purple-100 p-3 rounded-full mr-4"><i class="fas fa-map-marker-alt text-purple-600 text-xl"></i></div><div><h3 class="text-lg font-semibold text-gray-800">Location</h3><p class="text-gray-600">Cairo, Egypt</p></div></div>
+    </div>
+    <div class="bg-gray-50 p-6 rounded-2xl"><h3 class="text-xl font-semibold text-gray-800 mb-4">Send us a message</h3><form class="space-y-4"><div><input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all"></div><div><input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all"></div><div><textarea placeholder="Your Message" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 transition-all h-32"></textarea></div><button type="submit" class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-3 px-6 rounded-xl hover:from-purple-700 hover:to-indigo-700 transition-all shadow-md hover:shadow-lg">Send Message</button></form></div>
+  </div>
+</section>
+
+<footer class="bg-gray-900 text-gray-300 py-12">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-8">
+    <div><h4 class="text-lg font-semibold text-white mb-4">Solutions</h4><ul class="space-y-2 text-sm"><li><a href="#action-buttons" class="hover:text-medium-slateblue transition-colors">AutoML Platform</a></li><li><a href="#action-buttons" class="hover:text-medium-slateblue transition-colors">Tabular Analysis</a></li><li><a href="#action-buttons" class="hover:text-medium-slateblue transition-colors">Image Classification</a></li></ul></div>
+    <div><h4 class="text-lg font-semibold text-white mb-4">Resources</h4><ul class="space-y-2 text-sm"><li><a href="#" class="hover:text-medium-slateblue transition-colors">Documentation</a></li><li><a href="#" class="hover:text-medium-slateblue transition-colors">API Reference</a></li></ul></div>
+    <div><h4 class="text-lg font-semibold text-white mb-4">Company</h4><ul class="space-y-2 text-sm"><li><a href="#about-us" class="hover:text-medium-slateblue transition-colors">About Us</a></li><li><a href="#" class="hover:text-medium-slateblue transition-colors">Privacy Policy</a></li></ul></div>
+    <div><h4 class="text-lg font-semibold text-white mb-4">Get in touch</h4><div class="flex space-x-4"><a href="#" class="text-gray-400 hover:text-medium-slateblue"><i class="fab fa-twitter text-xl"></i></a><a href="#" class="text-gray-400 hover:text-medium-slateblue"><i class="fab fa-github text-xl"></i></a><a href="#" class="text-gray-400 hover:text-medium-slateblue"><i class="fab fa-linkedin text-xl"></i></a></div><div class="mt-4"><a href="#contact-us" class="text-sm text-medium-slateblue hover:underline">Contact Us</a></div></div>
+  </div>
+  <div class="text-center text-sm text-gray-500 mt-12 border-t border-gray-700 pt-8">&copy; 2025 Auto ML. All rights reserved</div>
+</footer>
+
+<div id="chatbot-bubble"><i class="fas fa-robot"></i></div>
+<div id="chatbot-window">
+  <div id="chat-header"><h3>AutoML Assistant</h3><button id="close-chat-btn"><i class="fas fa-times"></i></button></div>
+  <div id="chat-messages"></div>
+  <div id="chat-input-container">
+    <input type="text" id="chat-input" placeholder="Ask anything about AutoML"><button id="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

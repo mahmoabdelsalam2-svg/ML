@@ -1,0 +1,177 @@
+2025-08-18 03:36:30,918 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:36:30,919 | WARNING | backend | ML libraries not installed: No module named 'sklearn'
+2025-08-18 03:40:44,590 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:40:44,591 | WARNING | backend | ML libraries not installed: No module named 'sklearn'
+2025-08-18 03:41:06,000 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:41:06,002 | WARNING | backend | ML libraries not installed: No module named 'sklearn'
+2025-08-18 03:42:46,511 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:42:46,512 | WARNING | backend | ML libraries not installed: No module named 'sklearn'
+2025-08-18 03:43:00,313 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:43:00,314 | WARNING | backend | ML libraries not installed: No module named 'sklearn'
+2025-08-18 03:43:00,316 | INFO | backend | Routers registered successfully.
+2025-08-18 03:43:02,935 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:43:02,936 | WARNING | backend | ML libraries not installed: No module named 'sklearn'
+2025-08-18 03:43:02,938 | INFO | backend | Routers registered successfully.
+2025-08-18 03:43:03,034 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:43:33,771 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:43:39,170 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:44:59,455 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:45:05,307 | INFO | watchfiles.main | 3 changes detected
+2025-08-18 03:45:08,635 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:45:27,864 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:45:38,421 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:45:53,677 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:46:10,864 | INFO | watchfiles.main | 3 changes detected
+2025-08-18 03:46:12,591 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:46:25,389 | INFO | watchfiles.main | 3 changes detected
+2025-08-18 03:46:28,218 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:53:15,452 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:53:15,527 | INFO | backend | ML libraries imported successfully.
+2025-08-18 03:53:15,530 | INFO | backend | Routers registered successfully.
+2025-08-18 03:53:19,736 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:53:19,822 | INFO | backend | ML libraries imported successfully.
+2025-08-18 03:53:19,824 | INFO | backend | Routers registered successfully.
+2025-08-18 03:53:19,924 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:54:31,568 | INFO | watchfiles.main | 3 changes detected
+2025-08-18 03:54:34,549 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:54:36,389 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:54:36,482 | INFO | backend | ML libraries imported successfully.
+2025-08-18 03:54:36,484 | INFO | backend | Routers registered successfully.
+2025-08-18 03:54:36,559 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:54:42,932 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:54:43,013 | INFO | backend | ML libraries imported successfully.
+2025-08-18 03:54:43,016 | INFO | backend | Routers registered successfully.
+2025-08-18 03:54:47,063 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:54:47,153 | INFO | backend | ML libraries imported successfully.
+2025-08-18 03:54:47,156 | INFO | backend | Routers registered successfully.
+2025-08-18 03:54:47,255 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:55:04,195 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:55:04,277 | INFO | backend | ML libraries imported successfully.
+2025-08-18 03:55:04,280 | INFO | backend | Routers registered successfully.
+2025-08-18 03:55:08,368 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:55:08,453 | INFO | backend | ML libraries imported successfully.
+2025-08-18 03:55:08,455 | INFO | backend | Routers registered successfully.
+2025-08-18 03:55:08,523 | INFO | backend | Backend package initialized successfully.
+2025-08-18 03:55:08,523 | INFO | backend | ML libraries imported successfully.
+2025-08-18 03:55:08,526 | INFO | backend | Routers registered successfully.
+2025-08-18 03:55:08,584 | INFO | watchfiles.main | 6 changes detected
+2025-08-18 03:55:12,923 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:55:26,180 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:55:48,078 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:56:02,836 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:56:16,942 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:56:27,375 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:56:46,136 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:57:01,182 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:57:16,184 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:57:31,245 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:57:36,074 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:58:02,865 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:58:07,646 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:58:24,942 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:58:39,988 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:58:55,067 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:59:10,040 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:59:25,048 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:59:40,117 | INFO | watchfiles.main | 1 change detected
+2025-08-18 03:59:55,115 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:00:10,162 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:00:25,165 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:00:40,314 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:00:55,307 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:01:10,375 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:01:25,413 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:01:40,445 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:01:55,444 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:02:10,469 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:02:25,512 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:02:40,545 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:02:55,565 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:02:56,385 | INFO | watchfiles.main | 1 change detected
+2025-08-18 04:04:28,914 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:04:28,989 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:04:55,402 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:04:55,474 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:15:34,128 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:15:35,261 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:15:35,264 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:15:35,264 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:16:52,793 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:16:53,922 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:16:53,924 | ERROR | fastapi | Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2025-08-18 04:17:22,664 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:17:23,843 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:18:17,072 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:18:18,261 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:18:18,266 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:18:18,266 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:18:18,268 | ERROR | fastapi | Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2025-08-18 04:24:18,663 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:24:19,872 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:24:19,875 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:24:19,876 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:24:30,243 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:24:31,388 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:24:31,391 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:24:31,391 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:24:31,407 | INFO | backend | Routers registered successfully.
+2025-08-18 04:24:41,276 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:24:42,402 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:24:42,404 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:24:42,405 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:24:42,419 | INFO | backend | Routers registered successfully.
+2025-08-18 04:25:11,687 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:25:12,839 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:25:12,842 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:25:12,842 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:25:12,856 | INFO | backend | Routers registered successfully.
+2025-08-18 04:27:19,374 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:27:20,511 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:27:20,514 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:27:20,514 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:27:20,528 | INFO | backend | Routers registered successfully.
+2025-08-18 04:28:46,428 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:28:47,699 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:28:47,702 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:28:47,702 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:28:47,718 | INFO | backend | Routers registered successfully.
+2025-08-18 04:29:24,019 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:29:25,958 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:30:53,660 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:30:54,887 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:30:54,890 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:30:54,890 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:30:54,904 | INFO | backend | Routers registered successfully.
+2025-08-18 04:31:12,957 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:31:15,033 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:35:26,522 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:35:28,663 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:35:40,918 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:35:43,247 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:36:13,327 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:36:15,544 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:37:42,390 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:37:44,524 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:38:02,716 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:38:04,894 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:38:05,033 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:38:06,401 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:38:06,406 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:38:06,406 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:38:06,411 | INFO | backend | Routers registered successfully.
+2025-08-18 04:38:56,775 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:38:59,206 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:39:22,315 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:39:24,391 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:39:24,524 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:39:25,763 | INFO | backend | ML libraries imported successfully.
+2025-08-18 04:39:25,797 | INFO | backend | Backend package initialized successfully.
+2025-08-18 04:39:25,797 | INFO | backend | ML libraries imported successfully.
